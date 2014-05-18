@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/selectLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+         <Button
+            android:id="@+id/back"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:text="@string/back"
+          />
+         
+         <Button
+             android:id="@+id/save"
+             android:layout_width="90dp"
+             android:layout_height="55dp"
+             android:layout_alignParentRight="true"
+             android:text="@string/save"
+             />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/recordLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/saveRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_save" >
+            
+        </Button>
+
+        <TextView
+            android:id="@+id/timerView"
+            android:layout_width="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#ffcc0000"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:hint="@string/add_content"
+            android:minLines="5" />
+        
+       
+    </ScrollView>
+     <Button
+            android:id="@+id/insert_img"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:text="@string/add_picture"
+            
+            />
+
+        <Button
+            android:id="@+id/record"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:text="@string/add_record"
+             />
+        <TextView
+            android:id="@+id/soundRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_attachment_audio"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="@string/play_sound"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+        
+         <TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:id="@+id/runtime"
+					android:text="图片渲染中......"
+					android:singleLine="true"
+			        android:textColor="#666666"
+			        android:textSize="14sp"
+			        android:visibility="gone"
+		/>
+       
+        <Gallery 
+	    	android:id="@+id/galleryFilter"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"		
+			android:spacing="4dip" />
+        
+
+</LinearLayout>

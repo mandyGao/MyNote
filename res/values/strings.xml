@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Mandy note</string>
+    <string name="timer_format" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="add_record">增加录音</string>
+    <string name="add_picture">增加图片</string>
+    <string name="play_sound">播放录音</string>
+    <string name="record_save">录音保存</string>
+    <string name="add_content">请输入内容</string>
+</resources>
